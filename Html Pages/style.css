@@ -4,30 +4,35 @@ body {
   justify-content: center;
   align-items: center;
   display: flex;
+  background-image: url(Background.svg);
 }
 h1 {
   /*h1 (Name's Settings)*/
   direction: ltr;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Architects Daughter", cursive;
+  font-size: 20px;
+  text-shadow: 2px 2px 2px 2px #000;
   position: relative;
-  right: 85px;
+  right: 84px;
   bottom: 40px;
 }
 .age {
   /*p1 (Age's Settings)*/
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Zen Kurenaido", sans-serif;
   direction: ltr;
+  text-shadow: 2px 2px 2px 2px #000;
   position: relative;
-  right: 120px;
+  right: 140px;
   bottom: 40px;
 }
 .url {
-  /*em (url's Settings)*/
+  /*p2 (url's Settings)*/
+  font-family: "Space Mono", monospace;
   font-size: 14px;
   direction: ltr;
+  text-shadow: 2px 2px 2px 2px #000;
   position: relative;
-  right: 140px;
+  right: 10px;
   top: 20px;
 }
 .profile-card a > img {
@@ -42,7 +47,8 @@ h1 {
   box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.06);
   position: relative;
   top: 60px;
-  left: 120px;
+  left: 135px;
+  background-color: #ffffff75;
 }
 .profile-card a:hover > img {
   /*Avatar's shadow on hover*/
@@ -52,15 +58,15 @@ h1 {
 }
 .card {
   position: relative;
-  width: 400px;
+  width: 430px;
   height: 250px;
   border-radius: 5px;
-  background-color: #3f82b5;
-  color: #0d0d0d;
+  background-image: url(card.svg);
+  color: #ffffff;
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 8px rgb(0, 0, 0);
 }
