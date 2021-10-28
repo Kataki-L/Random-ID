@@ -4,11 +4,11 @@ const RandomAvatar = require("give-me-an-avatar");
 
 const AVATARSIZE = 256;
 
-const GenerateRandomID = () => ({
+const GenerateRandomID = (nmw) => ({
   url: RandomUrlGen.v4(),
   name: RandomNameGen(),
   age: RandomNumber(60, 12),
-  avatar: `https://robohash.org/${RandomUrlGen.v4()}.png`,
+  avatar: `https://robohash.org/${RandomUrlGen.v4()}.png?set=${nmw}`,
 });
 
 const RandomNumber = (max, min) =>
