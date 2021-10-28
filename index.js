@@ -1,10 +1,14 @@
+// Libraries
 const rndgen = require("./Codes/RandomID");
 const path = require("path");
 const fs = require("fs");
-const http = require("http");
+const express = require("express");
+// HTML Page File Location
 var pathname = path.join(__dirname, "Html Pages", "Main.html");
 
-const server = http.createServer((req, res) => {
+const app = express();
+
+app.get("/", function (req, res) {
   const randomdata = rndgen();
 
   fs.readFile(pathname, (err, content) => {
@@ -20,7 +24,7 @@ const server = http.createServer((req, res) => {
     );
   });
   console.log(rndgen());
-  //res.end(Content);
 });
+
 const PORT = process.env.PORT || 5000;
-server.listen(PORT, () => console.log(`Server Running On Port ${PORT}`));
+app.listen(PORT, () => console.log(`Server Running On Port ${PORT}`));

@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.17.1",
     "give-me-an-avatar": "^1.0.0",
     "node-random-name": "^1.0.1",
     "uuid": "^8.3.2"
