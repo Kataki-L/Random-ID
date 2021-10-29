@@ -4,6 +4,7 @@ body {
   justify-content: center;
   align-items: center;
   display: flex;
+  background-repeat: no-repeat;
   background-image: url(Background.svg);
 }
 h1 {
